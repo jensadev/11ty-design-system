@@ -7,13 +7,3 @@
 body {
     color: var(--color-text);
 }
-
-a:not([class]) {
-    color: var(--color-primary);
-    text-decoration: none;
-
-    &:hover {
-        color: var(--color-hover-primary);
-        text-decoration: underline;
-    }
-}

@@ -54,8 +54,8 @@ $level-size: $type-base-size;
     line-height: calc(2px + 2ex + 2px);
 
     // Set with `em` to be relative to current `font-size`
-    margin-bottom: 0.65em;
-
+    //margin-bottom: 0.65em;
+    margin-bottom: 2em - $type-size-ratio;
     // Limit in place based on testing -> smaller ratios are
     // prematurely or unnecessarily reduced
     @if ($type-size-ratio > 1.2) {

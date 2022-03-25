@@ -9,10 +9,20 @@ title: Color Token Contrast
 
 ## color-on-primary
   - `color-primary`
+  - `color-hover-primary`
+  - `color-text`
+
+## color-hover-primary
+  - `color-on-primary`
+  - `color-on-hover-primary`
+
+## color-on-hover-primary
+  - `color-hover-primary`
   - `color-text`
 
 ## color-text
   - `color-on-primary`
+  - `color-on-hover-primary`
   - `color-on-text`
 
 ## color-on-text

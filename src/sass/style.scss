@@ -1,7 +1,6 @@
-@use "_theme";
-@use "global";
+@use "theme";
+@use "global"; // with ($type-ratio: "augmentedFourth");
 
 body {
-  font-family: sans-serif;
-  background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }

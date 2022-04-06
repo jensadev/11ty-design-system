@@ -6,6 +6,7 @@ title: Color Token Contrast
 
 ## color-primary
   - `color-on-primary`
+  - `color-light`
 
 ## color-on-primary
   - `color-primary`
@@ -15,6 +16,7 @@ title: Color Token Contrast
 ## color-hover-primary
   - `color-on-primary`
   - `color-on-hover-primary`
+  - `color-light`
 
 ## color-on-hover-primary
   - `color-hover-primary`
@@ -24,6 +26,16 @@ title: Color Token Contrast
   - `color-on-primary`
   - `color-on-hover-primary`
   - `color-on-text`
+  - `color-light`
 
 ## color-on-text
   - `color-text`
+
+## color-light
+  - `color-primary`
+  - `color-hover-primary`
+  - `color-text`
+  - `color-on-light`
+
+## color-on-light
+  - `color-light`

@@ -9,8 +9,10 @@ $color-hover-primary: #284DE6 !default;
 $color-on-hover-primary: #CCD8FF !default;
 $color-text: #424242 !default;
 $color-on-text: #AEAEAE !default;
+$color-light: #fff !default;
+$color-on-light: #767676 !default;
 
-$base-color-tokens: ("primary", "hover-primary", "text");
+$base-color-tokens: ("primary", "hover-primary", "text", "light");
 
 $color-tokens: (
   "color-primary": $color-primary,
@@ -18,7 +20,9 @@ $color-tokens: (
   "color-hover-primary": $color-hover-primary,
   "color-on-hover-primary": $color-on-hover-primary,
   "color-text": $color-text,
-  "color-on-text": $color-on-text
+  "color-on-text": $color-on-text,
+  "color-light": $color-light,
+  "color-on-light": $color-on-light
 ) !default;
 
 @mixin color-tokens() {
@@ -28,4 +32,6 @@ $color-tokens: (
   --color-on-hover-primary: #{$color-on-hover-primary};
   --color-text: #{$color-text};
   --color-on-text: #{$color-on-text};
+  --color-light: #{$color-light};
+  --color-on-light: #{$color-on-light};
 }

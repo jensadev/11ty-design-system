@@ -15,14 +15,21 @@ $card-border-radius: ".75rem" !default;
     &__content {
         padding: var(--card-padding, 1rem);
     }
+
+    &__title {
+        font-size: var(--card-title-size, var(--font-size-h3));
+    }
 }
 
 .card--feature-image {
+    --card-aspect-ratio: unset;
     display: grid;
     grid-template-areas: "stack";
     align-items: end;
     justify-content: center;
     position: relative;
+
+    aspect-ratio: var(--card-feature-aspect-ratio, 1);
 
     // > img {
     //     filter: brightness(0.65) saturate(1.25);
@@ -54,6 +61,7 @@ $card-border-radius: ".75rem" !default;
         z-index: 1;
 
         .card__title {
+            --card-title-size: var(--font-size-h2);
             margin-block-end: 0.5rem;
         }
 

@@ -2,7 +2,43 @@
 title: Cards
 ---
 
-<div class="card card--feature-image">
+
+{%- from 'partials/card.macro.njk' import card -%}
+
+{{ card({
+    type: 'feature',
+    image: '/assets/images/rolands-varsbergs-miKmVyq3qhE-unsplash.jpg',
+    alt: 'Feature Image',
+    title: 'West California',
+    featureLink: '#',
+    featureLinkContent: 'Explore now<span class="visually-hidden"> - West California</span>'
+}) }}
+
+{{ card({
+    image: '/assets/images/rolands-varsbergs-miKmVyq3qhE-unsplash.jpg',
+    alt: 'Feature Image',
+    title: 'West California',
+    content: ''
+}) }}
+
+<!-- {% card 
+    cardType = 'feature',
+    cardImage = '/assets/images/rolands-varsbergs-miKmVyq3qhE-unsplash.jpg',
+    cardAlt = 'Feature Image',
+    cardTitle = 'West California',
+    featureLink = '#',
+    featureLinkContent = 'Explore now<span class="visually-hidden"> - West California</span>' %} -->
+
+<!-- {% set cardType = 'feature' %}
+{% set cardImage = '/assets/images/rolands-varsbergs-miKmVyq3qhE-unsplash.jpg' %}
+{% set cardAlt = 'Feature Image' %}
+{% set cardTitle = 'West California' %}
+{% set featureLink = '#' %}
+{% set featureLinkContent = 'Explore now<span class="visually-hidden"> - West California</span>' %} -->
+
+<!-- {% include 'partials/card.njk' %} -->
+
+<!-- <div class="card card--feature-image">
     <img src="/assets/images/rolands-varsbergs-miKmVyq3qhE-unsplash.jpg" alt="">
     <div class="card__content">
         <h3 class="card__title">West California</h3>
@@ -16,4 +52,4 @@ title: Cards
         <h3 class="card__title">West California</h3>
         <a href="#">Explore now<span class="visually-hidden"> - West California</span></a>
     </div>
-</div>
+</div> -->
